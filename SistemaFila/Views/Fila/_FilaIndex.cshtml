@@ -1,0 +1,35 @@
+﻿@model IEnumerable<SistemaFila.Models.Fila>
+
+@if (ViewBag.PossuiBotaoNovaFila)
+{
+<p>
+    <h4>Filas</h4> [@Html.ActionLink("Nova Fila", "Create", new { ComercioId = @ViewBag.ComercioId })]
+</p>
+}
+<table class="table table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tamanho)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tipo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tamanho)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { ComercioId = item.ComercioId, TipoFila = item.Tipo }) |
+            @Html.ActionLink("Delete", "Delete", new { ComercioId = item.ComercioId, TipoFila = item.Tipo })
+        </td>
+    </tr>
+}
+
+</table>

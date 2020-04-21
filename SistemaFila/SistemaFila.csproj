@@ -127,6 +127,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ComercioController.cs" />
+    <Compile Include="Controllers\FilaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\SistemaFilaContext.cs" />
     <Compile Include="DAL\SistemaFilaInitializer.cs" />
@@ -173,6 +175,16 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Comercio\Create.cshtml" />
+    <Content Include="Views\Comercio\Delete.cshtml" />
+    <Content Include="Views\Comercio\Details.cshtml" />
+    <Content Include="Views\Comercio\Edit.cshtml" />
+    <Content Include="Views\Comercio\Index.cshtml" />
+    <Content Include="Views\Fila\Create.cshtml" />
+    <Content Include="Views\Fila\Delete.cshtml" />
+    <Content Include="Views\Fila\Edit.cshtml" />
+    <Content Include="Views\Fila\Index.cshtml" />
+    <Content Include="Views\Fila\_FilaIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
